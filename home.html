@@ -1,595 +1,445 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link
-            rel="icon"
-            href="w3images/2023_Facebook_icon.svg.png"
-            type="image/x-icon"
-        />
-        <title>Facebook</title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/w3css/4/w3.css"
-        />
-        -->
-        <!-- <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
-        /> -->
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Facebook</title>
         <link rel="stylesheet" href="style.css" />
         <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="icon"
+            type="image/x-icon"
+            href="image/2021_Facebook_icon.svg.webp"
         />
         <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <style>
-            html,
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
-                font-family: 'Open Sans', sans-serif;
-            }
-        </style>
     </head>
-    <body class="w3-theme-l5">
-        <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-                <a
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
-                    href="javascript:void(0);"
-                    onclick="openNav()"
-                    ><i class="fa fa-bars"></i
-                ></a>
-                <a
-                    href="#"
-                    class="w3-bar-item w3-button w3-padding-large w3-theme-d4"
-                    ><i class="fa fa-home w3-margin-right"></i>Logo</a
-                >
-                <a
-                    href="#"
-                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-                    title="Home"
-                    ><i class="fa fa-globe"></i
-                ></a>
-                <a
-                    href="#"
-                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-                    title="Friends"
-                    ><i class="fa fa-user"></i
-                ></a>
-                <a
-                    href="#"
-                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-                    title="Messages"
-                    ><i class="fa fa-envelope"></i
-                ></a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button
-                        class="w3-button w3-padding-large"
-                        title="Notifications"
-                    >
-                        <i class="fa fa-bell"></i
-                        ><span class="w3-badge w3-right w3-small w3-green"
-                            >3</span
-                        >
-                    </button>
-                    <div
-                        class="w3-dropdown-content w3-card-4 w3-bar-block"
-                        style="width: 300px"
-                    >
-                        <a href="#" class="w3-bar-item w3-button"
-                            >One new friend request</a
-                        >
-                        <a href="#" class="w3-bar-item w3-button"
-                            >John Doe posted on your wall</a
-                        >
-                        <a href="#" class="w3-bar-item w3-button"
-                            >Jane likes your post</a
-                        >
-                    </div>
+
+    <body>
+        <div class="header">
+            <div class="header-left">
+                <img src="image/2021_Facebook_icon.svg.webp" alt="" />
+                <div class="header-input">
+                    <span class="material-icons"> search</span>
+                    <input type="text " placeholder="Search Facebook" />
                 </div>
-                <a
-                    href="#"
-                    class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-                    title="My Account"
-                >
-                    <img
-                        src="/w3images/avatar2.png"
-                        class="w3-circle"
-                        style="height: 23px; width: 23px"
-                        alt="Avatar"
-                    />
-                </a>
+            </div>
+            <div class="header-middle">
+                <div class="header-action active">
+                    <span class="material-icons"> home </span>
+                </div>
+                <div class="header-action">
+                    <span class="material-icons"> ondemand_video </span>
+                </div>
+                <div class="header-action">
+                    <span class="material-icons"> storefront </span>
+                </div>
+                <div class="header-action">
+                    <span class="material-icons"> supervised_user_circle </span>
+                </div>
+                <div class="header-action">
+                    <span class="material-icons"> grid_view </span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-profile">
+                    <img src="images/avatar.png" class="user-avatar" />
+                    <h4>Nguyen Dinh Nam</h4>
+                </div>
+                <span class="material-icons"> add </span>
+                <span class="material-icons"> forum </span>
+                <span class="material-icons"> notifications_active </span>
+                <span class="material-icons"> arrow_drop_down </span>
             </div>
         </div>
+        <!-- header ends -->
 
-        <!-- Navbar on small screens -->
-        <div
-            id="navDemo"
-            class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large"
-        >
-            <a href="#" class="w3-bar-item w3-button w3-padding-large"
-                >Link 1</a
-            >
-            <a href="#" class="w3-bar-item w3-button w3-padding-large"
-                >Link 2</a
-            >
-            <a href="#" class="w3-bar-item w3-button w3-padding-large"
-                >Link 3</a
-            >
-            <a href="#" class="w3-bar-item w3-button w3-padding-large"
-                >My Profile</a
-            >
-        </div>
-
-        <!-- Page Container -->
-        <div
-            class="w3-container w3-content"
-            style="max-width: 1400px; margin-top: 80px"
-        >
-            <!-- The Grid -->
-            <div class="w3-row">
-                <!-- Left Column -->
-                <div class="w3-col m3">
-                    <!-- Profile -->
-                    <div class="w3-card w3-round w3-white">
-                        <div class="w3-container">
-                            <h4 class="w3-center">My Profile</h4>
-                            <p class="w3-center">
-                                <img
-                                    src="/w3images/avatar3.png"
-                                    class="w3-circle"
-                                    style="height: 106px; width: 106px"
-                                    alt="Avatar"
-                                />
-                            </p>
-                            <hr />
-                            <p>
-                                <i
-                                    class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"
-                                ></i>
-                                Designer, UI
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-home fa-fw w3-margin-right w3-text-theme"
-                                ></i>
-                                London, UK
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"
-                                ></i>
-                                April 1, 1988
-                            </p>
-                        </div>
-                    </div>
-                    <br />
-
-                    <!-- Accordion -->
-                    <div class="w3-card w3-round">
-                        <div class="w3-white">
-                            <button
-                                onclick="myFunction('Demo1')"
-                                class="w3-button w3-block w3-theme-l1 w3-left-align"
-                            >
-                                <i
-                                    class="fa fa-circle-o-notch fa-fw w3-margin-right"
-                                ></i>
-                                My Groups
-                            </button>
-                            <div id="Demo1" class="w3-hide w3-container">
-                                <p>Some text..</p>
-                            </div>
-                            <button
-                                onclick="myFunction('Demo2')"
-                                class="w3-button w3-block w3-theme-l1 w3-left-align"
-                            >
-                                <i
-                                    class="fa fa-calendar-check-o fa-fw w3-margin-right"
-                                ></i>
-                                My Events
-                            </button>
-                            <div id="Demo2" class="w3-hide w3-container">
-                                <p>Some other text..</p>
-                            </div>
-                            <button
-                                onclick="myFunction('Demo3')"
-                                class="w3-button w3-block w3-theme-l1 w3-left-align"
-                            >
-                                <i
-                                    class="fa fa-users fa-fw w3-margin-right"
-                                ></i>
-                                My Photos
-                            </button>
-                            <div id="Demo3" class="w3-hide w3-container">
-                                <div class="w3-row-padding">
-                                    <br />
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/lights.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/nature.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/mountains.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/forest.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/nature.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                    <div class="w3-half">
-                                        <img
-                                            src="/w3images/snow.jpg"
-                                            style="width: 100%"
-                                            class="w3-margin-bottom"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-
-                    <!-- Interests -->
-                    <div class="w3-card w3-round w3-white w3-hide-small">
-                        <div class="w3-container">
-                            <p>Interests</p>
-                            <p>
-                                <span class="w3-tag w3-small w3-theme-d5"
-                                    >News</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-d4"
-                                    >W3Schools</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-d3"
-                                    >Labels</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-d2"
-                                    >Games</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-d1"
-                                    >Friends</span
-                                >
-                                <span class="w3-tag w3-small w3-theme"
-                                    >Games</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-l1"
-                                    >Friends</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-l2"
-                                    >Food</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-l3"
-                                    >Design</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-l4"
-                                    >Art</span
-                                >
-                                <span class="w3-tag w3-small w3-theme-l5"
-                                    >Photos</span
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <br />
-
-                    <!-- Alert Box -->
-                    <div
-                        class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small"
-                    >
-                        <span
-                            onclick="this.parentElement.style.display='none'"
-                            class="w3-button w3-theme-l3 w3-display-topright"
-                        >
-                            <i class="fa fa-remove"></i>
-                        </span>
-                        <p><strong>Hey!</strong></p>
-                        <p>People are looking at your profile. Find out who.</p>
-                    </div>
-
-                    <!-- End Left Column -->
+        <!-- main body starts -->
+        <div class="main-body">
+            <!-- side bar -->
+            <div class="side-bar">
+                <div class="side-bar-row">
+                    <img src="images/avatar.png" class="user-avatar" />
+                    <h4>Nguyen Dinh Nam</h4>
                 </div>
-
-                <!-- Middle Column -->
-                <div class="w3-col m7">
-                    <div class="w3-row-padding">
-                        <div class="w3-col m12">
-                            <div class="w3-card w3-round w3-white">
-                                <div class="w3-container w3-padding">
-                                    <h6 class="w3-opacity">
-                                        Social Media template by w3.css
-                                    </h6>
-                                    <p
-                                        contenteditable="true"
-                                        class="w3-border w3-padding"
-                                    >
-                                        Status: Feeling Blue
-                                    </p>
-                                    <button
-                                        type="button"
-                                        class="w3-button w3-theme"
-                                    >
-                                        <i class="fa fa-pencil"></i>  Post
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="w3-container w3-card w3-white w3-round w3-margin"
-                    >
-                        <br />
-                        <img
-                            src="/w3images/avatar2.png"
-                            alt="Avatar"
-                            class="w3-left w3-circle w3-margin-right"
-                            style="width: 60px"
-                        />
-                        <span class="w3-right w3-opacity">1 min</span>
-                        <h4>John Doe</h4>
-                        <br />
-                        <hr class="w3-clear" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                        </p>
-                        <div class="w3-row-padding" style="margin: 0 -16px">
-                            <div class="w3-half">
-                                <img
-                                    src="/w3images/lights.jpg"
-                                    style="width: 100%"
-                                    alt="Northern Lights"
-                                    class="w3-margin-bottom"
-                                />
-                            </div>
-                            <div class="w3-half">
-                                <img
-                                    src="/w3images/nature.jpg"
-                                    style="width: 100%"
-                                    alt="Nature"
-                                    class="w3-margin-bottom"
-                                />
-                            </div>
-                        </div>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d1 w3-margin-bottom"
-                        >
-                            <i class="fa fa-thumbs-up"></i>  Like
-                        </button>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d2 w3-margin-bottom"
-                        >
-                            <i class="fa fa-comment"></i>  Comment
-                        </button>
-                    </div>
-
-                    <div
-                        class="w3-container w3-card w3-white w3-round w3-margin"
-                    >
-                        <br />
-                        <img
-                            src="/w3images/avatar5.png"
-                            alt="Avatar"
-                            class="w3-left w3-circle w3-margin-right"
-                            style="width: 60px"
-                        />
-                        <span class="w3-right w3-opacity">16 min</span>
-                        <h4>Jane Doe</h4>
-                        <br />
-                        <hr class="w3-clear" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                        </p>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d1 w3-margin-bottom"
-                        >
-                            <i class="fa fa-thumbs-up"></i>  Like
-                        </button>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d2 w3-margin-bottom"
-                        >
-                            <i class="fa fa-comment"></i>  Comment
-                        </button>
-                    </div>
-
-                    <div
-                        class="w3-container w3-card w3-white w3-round w3-margin"
-                    >
-                        <br />
-                        <img
-                            src="/w3images/avatar6.png"
-                            alt="Avatar"
-                            class="w3-left w3-circle w3-margin-right"
-                            style="width: 60px"
-                        />
-                        <span class="w3-right w3-opacity">32 min</span>
-                        <h4>Angie Jane</h4>
-                        <br />
-                        <hr class="w3-clear" />
-                        <p>Have you seen this?</p>
-                        <img
-                            src="/w3images/nature.jpg"
-                            style="width: 100%"
-                            class="w3-margin-bottom"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                        </p>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d1 w3-margin-bottom"
-                        >
-                            <i class="fa fa-thumbs-up"></i>  Like
-                        </button>
-                        <button
-                            type="button"
-                            class="w3-button w3-theme-d2 w3-margin-bottom"
-                        >
-                            <i class="fa fa-comment"></i>  Comment
-                        </button>
-                    </div>
-
-                    <!-- End Middle Column -->
+                <div class="side-bar-row">
+                    <img src="image/friends.png" alt="" />
+                    <h4>Friends</h4>
                 </div>
+                <div class="side-bar-row">
+                    <img src="image/groups.png" alt="" />
+                    <h4>Groups</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/marketplace.png" alt="" />
+                    <h4>Marketplace</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/watch.png" alt="" />
+                    <h4>Watch</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/memories.png" alt="" />
+                    <h4>Memories</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/saved.png" alt="" />
+                    <h4>Saved</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/pages.png" alt="" />
+                    <h4>Pages</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/events.png" alt="" />
+                    <h4>Events</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/most recent.png" alt="" />
+                    <h4>Most recents</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/ad center.png" alt="" />
+                    <h4>Ad Center</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/Ads Maneger.png" alt="" />
+                    <h4>Ads Maneger</h4>
+                </div>
+                <div class="side-bar-row">
+                    <img src="image/blood donations.png" alt="" />
+                    <h4>Blood Donations</h4>
+                </div>
+            </div>
+            <!-- side bar ends -->
 
-                <!-- Right Column -->
-                <div class="w3-col m2">
-                    <div class="w3-card w3-round w3-white w3-center">
-                        <div class="w3-container">
-                            <p>Upcoming Events:</p>
-                            <img
-                                src="/w3images/forest.jpg"
-                                alt="Forest"
-                                style="width: 100%"
+            <!-- feed starts -->
+            <div class="feed">
+                <div class="story-reel">
+                    <div
+                        class="story"
+                        style="background-image: url('image/bro reel.jpg')"
+                    >
+                        <img
+                            src="image/brototype logo.jpg"
+                            class="user-avatar story-avatar"
+                        />
+                        <h4>Nam 1</h4>
+                    </div>
+
+                    <div
+                        class="story"
+                        style="background-image: url('image/kaztro\ reel.jpg')"
+                    >
+                        <img
+                            src="image/kaztro.jpg"
+                            class="user-avatar story-avatar"
+                        />
+                        <h4>Nam 2</h4>
+                    </div>
+                    <div
+                        class="story"
+                        style="background-image: url('image/reel.jpg')"
+                    >
+                        <img
+                            src="image/d2d logo.jpg"
+                            class="user-avatar story-avatar"
+                        />
+                        <h4>Nam 3</h4>
+                    </div>
+                    <div
+                        class="story"
+                        style="background-image: url('image/bike.jpg')"
+                    >
+                        <img
+                            src="image/trek logo.jpg"
+                            class="user-avatar story-avatar"
+                        />
+                        <h4>Nam 4</h4>
+                    </div>
+                    <div
+                        class="story"
+                        style="background-image: url('image/reel mt.jpg')"
+                    >
+                        <img
+                            src="image/mt logo.jpg"
+                            class="user-avatar story-avatar"
+                        />
+                        <h4>Nam 5</h4>
+                    </div>
+                </div>
+                <!-- message center start -->
+                <div class="message-sender">
+                    <div class="message-sender-top">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <form>
+                            <input
+                                type="text"
+                                class="message-sender-input"
+                                placeholder="What's on your mind,Ali?"
                             />
-                            <p><strong>Holiday</strong></p>
-                            <p>Friday 15:00</p>
-                            <p>
-                                <button class="w3-button w3-block w3-theme-l4">
-                                    Info
-                                </button>
-                            </p>
+                        </form>
+                    </div>
+                    <div class="message-sender-bottum">
+                        <div class="message-sender-options">
+                            <span style="color: red" class="material-icons"
+                                >videocam</span
+                            >
+                            <h4>Live video</h4>
+                        </div>
+                        <div class="message-sender-options">
+                            <span style="color: green" class="material-icons"
+                                >photo_library</span
+                            >
+                            <h4>Photo/video</h4>
+                        </div>
+                        <div class="message-sender-options">
+                            <span style="color: orange" class="material-icons"
+                                >insert_emoticon</span
+                            >
+                            <h4>Feeling/Activity</h4>
                         </div>
                     </div>
-                    <br />
+                </div>
+                <!-- message center end -->
 
-                    <div class="w3-card w3-round w3-white w3-center">
-                        <div class="w3-container">
-                            <p>Friend Request</p>
-                            <img
-                                src="/w3images/avatar6.png"
-                                alt="Avatar"
-                                style="width: 50%"
-                            /><br />
-                            <span>Jane Doe</span>
-                            <div class="w3-row w3-opacity">
-                                <div class="w3-half">
-                                    <button
-                                        class="w3-button w3-block w3-green w3-section"
-                                        title="Accept"
-                                    >
-                                        <i class="fa fa-check"></i>
-                                    </button>
-                                </div>
-                                <div class="w3-half">
-                                    <button
-                                        class="w3-button w3-block w3-red w3-section"
-                                        title="Decline"
-                                    >
-                                        <i class="fa fa-remove"></i>
-                                    </button>
-                                </div>
+                <!-- post starts -->
+                <div class="post message-sender">
+                    <div class="post-top">
+                        <img
+                            src="image/brototype logo.jpg"
+                            class="user-avatar post-avatar"
+                        />
+                        <div class="post-topInfo">
+                            <h3>Nam 1</h3>
+                            <p>13.march at 18:00</p>
+                        </div>
+                    </div>
+                    <div class="post-bottom">
+                        <p>
+                            Invest in skills not in degrees✨ | Congrats new
+                            born Software Engineers from Brocamp with high
+                            Salary Packages 🔥 | www.brototype.in
+                        </p>
+                    </div>
+                    <div class="post-image">
+                        <img src="image/bro reel.JPG" alt="" />
+                    </div>
+                    <div class="post-options">
+                        <div class="post-option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons">
+                                chat_bubble_outline
+                            </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons"> near_me </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- post ends -->
+                <!-- post starts -->
+                <div class="post">
+                    <div class="post-top">
+                        <img
+                            src="image/kaztro.jpg"
+                            class="user-avatar post-avatar"
+                        />
+                        <div class="post-topInfo">
+                            <h3>Nam 2</h3>
+                            <p>13.march at 18:00</p>
+                        </div>
+                    </div>
+                    <div class="post-bottom">
+                        <p>On Air Kaztro ✈ 💙</p>
+                    </div>
+                    <div class="post-image">
+                        <img src="image/kaztro post.jpg" alt="" />
+                    </div>
+                    <div class="post-options">
+                        <div class="post-option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons">
+                                chat_bubble_outline
+                            </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons"> near_me </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- post ends -->
+
+                <!-- post starts -->
+                <div class="post">
+                    <div class="post-top">
+                        <img
+                            src="image/d2d logo.jpg"
+                            class="user-avatar post-avatar"
+                        />
+                        <div class="post-topInfo">
+                            <h3>Nam 3</h3>
+                            <p>13.march at 18:00</p>
+                        </div>
+                    </div>
+                    <div class="post-bottom">
+                        <p>
+                            Invest in skills not in degrees✨ | Congrats new
+                            born Software Engineers from Brocamp with high
+                            Salary Packages 🔥 | www.brototype.in
+                        </p>
+                    </div>
+                    <div class="post-image">
+                        <img
+                            src="image/258860409_389286599546883_5574515127521037578_n.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="post-options">
+                        <div class="post-option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons">
+                                chat_bubble_outline
+                            </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons"> near_me </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- post ends -->
+                <!-- post starts -->
+                <div class="post">
+                    <div class="post-top">
+                        <img
+                            src="image/trek logo.jpg"
+                            class="user-avatar post-avatar"
+                        />
+                        <div class="post-topInfo">
+                            <h3>Nam 4</h3>
+                            <p>13.march at 18:00</p>
+                        </div>
+                    </div>
+                    <div class="post-bottom">
+                        <p>
+                            Whether you're saddling up to ride or sitting back
+                            for a rest day, the all-new Madone SL 6 will always
+                            be in style.
+                        </p>
+                    </div>
+                    <div class="post-image">
+                        <img src="image/trek post.jpg" alt="" />
+                    </div>
+                    <div class="post-options">
+                        <div class="post-option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons">
+                                chat_bubble_outline
+                            </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post-option">
+                            <span class="material-icons"> near_me </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- post ends -->
+            </div>
+            <!-- feed ends -->
+            <!-- left side bar starts -->
+            <div class="left-sidebar">
+                <div class="left-top">
+                    <div class="sponser-option">
+                        <h3>Sponsored</h3>
+                    </div>
+                    <div class="sponser-option 1">
+                        <img src="image/Ad1.jpg" />
+                        <div class="ad-name">
+                            <h3>NFT Marketplace</h3>
+                            <h4>crypto.com</h4>
+                        </div>
+                    </div>
+                    <div class="sponser-option 2">
+                        <img src="image/add2.jpg" />
+                        <div class="ad-name">
+                            <h3>Find IT/ Web Engineering Jobs In Japan</h3>
+                            <h4>golobel.find-code.ioy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-bottom">
+                    <div class="left-bootom-bar">
+                        <h4>Contacts</h4>
+                        <div class="bar-icon">
+                            <div>
+                                <span class="material-icons"> video_call </span>
+                            </div>
+                            <div>
+                                <span class="material-icons"> search </span>
+                            </div>
+                            <div>
+                                <span class="material-icons"> more_horiz </span>
                             </div>
                         </div>
                     </div>
-                    <br />
-
-                    <div
-                        class="w3-card w3-round w3-white w3-padding-16 w3-center"
-                    >
-                        <p>ADS</p>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 1</h4>
                     </div>
-                    <br />
-
-                    <div
-                        class="w3-card w3-round w3-white w3-padding-32 w3-center"
-                    >
-                        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 2</h4>
                     </div>
-
-                    <!-- End Right Column -->
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 3</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 4</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 5</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 6</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 7</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="images/avatar.png" class="user-avatar" />
+                        <h4>Nam 8</h4>
+                    </div>
                 </div>
-
-                <!-- End Grid -->
             </div>
-
-            <!-- End Page Container -->
+            <!-- left side bar ends -->
         </div>
-        <br />
 
-        <!-- Footer -->
-        <footer class="w3-container w3-theme-d3 w3-padding-16">
-            <h5>Footer</h5>
-        </footer>
-
-        <footer class="w3-container w3-theme-d5">
-            <p></p>
-        </footer>
-
-        <script>
-            // Accordion
-            function myFunction(id) {
-                var x = document.getElementById(id);
-                if (x.className.indexOf('w3-show') == -1) {
-                    x.className += ' w3-show';
-                    x.previousElementSibling.className += ' w3-theme-d1';
-                } else {
-                    x.className = x.className.replace('w3-show', '');
-                    x.previousElementSibling.className =
-                        x.previousElementSibling.className.replace(
-                            ' w3-theme-d1',
-                            ''
-                        );
-                }
-            }
-
-            // Used to toggle the menu on smaller screens when clicking on the menu button
-            function openNav() {
-                var x = document.getElementById('navDemo');
-                if (x.className.indexOf('w3-show') == -1) {
-                    x.className += ' w3-show';
-                } else {
-                    x.className = x.className.replace(' w3-show', '');
-                }
-            }
-        </script>
+        <!-- main body ends -->
     </body>
 </html>
