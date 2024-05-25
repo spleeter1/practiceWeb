@@ -1,0 +1,29 @@
+htdocs/
+├── css/
+│   └── styles.css
+│   └── profile.css
+├── js/
+│   └── script.js
+├── img/
+│   ├── profile_pic.jpg
+│   └── ...
+├── includes/
+│   ├── config.php
+│   ├── db.php
+│   └── functions.php
+├── html/
+│   ├── index.html
+│   ├── profile.html
+│   ├── create_post.html
+│   └── edit_post.html
+├── modules/
+│   ├── users/
+│   │   ├── profile.php
+│   │   └── settings.php
+│   └── posts/
+│       ├── view_post.php
+│       └── edit_post.php
+└── static/
+│   ├── avatars/
+│   └── posts/
+└── index.php
